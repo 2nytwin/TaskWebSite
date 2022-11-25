@@ -3,8 +3,12 @@ from django.http import HttpResponse
 
 
 def index(request):
-    return HttpResponse('<h4>Hello</h4>')
+    return HttpResponse('<h1>hello</h1>')
 
 
 def findme(request):
-    return HttpResponse('<h1>Find me -_-</h1>')
+    return render(request,'findme.html')
+
+
+def about(request):
+    return HttpResponse('<h1>Про нас</h1>')
