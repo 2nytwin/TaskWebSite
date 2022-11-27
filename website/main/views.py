@@ -3,7 +3,7 @@ from django.http import HttpResponse
 
 
 def index(request):
-    return HttpResponse('<h1>hello</h1>')
+    return render(request, 'main/index.html')
 
 
 def findme(request):
@@ -11,4 +11,4 @@ def findme(request):
 
 
 def about(request):
-    return HttpResponse('<h1>Про нас</h1>')
+    return render(request, 'main/about.html')
