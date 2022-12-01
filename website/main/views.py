@@ -7,8 +7,12 @@ def index(request):
 
 
 def findme(request):
-    return render(request,'findme.html')
+    return render(request, 'findme.html')
 
 
 def about(request):
     return render(request, 'main/about.html')
+
+
+def test(request):
+    return render(request, 'main/test.html')
