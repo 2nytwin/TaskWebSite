@@ -5,10 +5,12 @@ from .models import Task
 
 def index(request):
     task = Task.objects.order_by('id')
-    return render(request, 'main/index.html',{'title':'Главная страница', 'tasks':'title'})
+    return render(request, 'main/index.html', {'title': 'Главная страница', 'tasks': 'title'})
 
 
 def about(request):
     return render(request, 'main/about.html')
 
 
+def create(request):
+    return render(request, 'main/create.html')
