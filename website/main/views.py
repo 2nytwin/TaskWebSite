@@ -16,6 +16,6 @@ def about(request):
 def create(request):
     form = TaskForm()
     context = {
-'form':form
+        'form': form
     }
     return render(request, 'main/create.html')
